@@ -25,6 +25,10 @@ a {
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    /* 하나의 요소에 width/height와 padding이 동시에 들어가면
+    넓이/높이가 늘어남 이걸 막는 코드
+    입력한 넓이/높이 내부로 여백이 들어가도록 수정 */
 }
 h1, h2, h3, h4, h5, h6 {
     font-size: inherit;
@@ -110,16 +114,49 @@ li {
         이미지의 특징 : 넓이를 바꾸면 비율에 맞게
         높이가 자동 조정 */
 }
-body {
-    margin: 0 0 500px 0;
-}
+
 .coper .list ul li .more {
     margin: 40px 0 0 0;
 }
 .coper .list ul li .more a {
-    border: 1px solid #666666;
-    border-radius: 10px;
+    border: 1px solid #999999;
+    padding: 20px 249px ;
+    background-color: #ffffff;
     text-align: center;
+    border-radius: 10px;
+}
+.pass h1 {
+    font-weight: 700;
+    font-size: 40px;
+    margin: 220px 0 0 0;
+    color: #1d1d1d;
+}
+.pass .list {
+    margin: 0 30px 0 0 ;
+}
+.pass .list ul {
+    display: flex;
+    margin: 20px 0 0 0;
+    justify-content: space-between;
+}
+.pass .list li {
+    width: 394px;
+    height: 240px;
+    border: 1px solid #999999;
+    border-radius: 10px;
+    padding: 60px 0 0 46px;
+}
+.pass .list li strong {
+    font-size: 18px;
+    color: #7c89ed;
     font-weight: 400;
-    padding: 20px 249px;
+}
+.pass .list li h2 {
+    font-weight: 700;
+    font-size: 30px;
+    margin: 0 0 20px 0;
+    color: #1d1d1d;
+}
+body {
+    margin: 0 0 500px 0;
 }
