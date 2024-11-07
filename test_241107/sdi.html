@@ -17,17 +17,20 @@
                     <li>
                         <h2>프로세스 컬러(Process Color)</h2>
                         <p>모든 인쇄매체 및 제작물</p>
-                        <div class="process"><p>C100  M80  Y0  K0</p></div>
+                        <div class="process c1"><p>C100  M80  Y0  K0</p></div>
+                        <!--process 클래스에서 각각 개별로 분리할때 c1,c2,c3 로 구분해서 하면됨
+                        이러면 css에서 process로 정의할때 다 값이 적용되며 c1 c2 c3 로 따르게 적용하고싶으면
+                        그 항목에 맞게 분리해서 작성하면됨-->
                     </li>
                     <li>
                         <h2>팬톤 컬러(Pantone Color)</h2>
                         <p>모든 인쇄매체 및 제작물</p>
-                        <div class="process"><p>Pantone 286C</p></div>
+                        <div class="process c2"><p>Pantone 286C</p></div>
                     </li>
                     <li>
                         <h2>RGB 컬러(RGB Color)</h2>
                         <p>모든 인쇄매체 및 제작물</p>
-                        <div class="process"><p>R20  G40  B160</p></div>
+                        <div class="process c3"><p>R20  G40  B160</p></div>
                     </li>
                 </ul>
             </div>
@@ -38,7 +41,18 @@
             <h1>CI 다운로드</h1>
             <p>영상, 인터넷 및 옥외매체에 사용하는 워드마크로, 인쇄매체에는 사용하지 않는다.<br>
                 타원과 문자가 분리된 형태로 입체 표현이 용이하며, 배경 공간의 제약을 최소화한 형태이다.</p>
-            <div><img src="" alt=""></div>               
+            <div class="list">
+                <ul>
+                    <li>
+                        <div class="photo"><img src="iamges/down_img1.png" alt="국문 ci"></div></dv>
+                        <div class="more"><a href="#n">국문 CI 다운로드</a></div>
+                    </li>
+                    <li>
+                        <div class="photo"><img src="iamges/up_img1.png" alt="영문 ci"></div></dv>
+                        <div class="more"><a href="#n">영문 CI 다운로드</a></div>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
     
