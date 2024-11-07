@@ -1,0 +1,71 @@
+@font-face {
+	font-family: 'Ptd';
+	font-weight: 700;
+	font-display: swap;
+	src: local('Pretendard Bold'), url(../fonts/Pretendard-Bold.woff2) format('woff2'), url(../fonts/Pretendard-Bold.woff) format('woff');
+}
+@font-face {
+	font-family: 'Ptd';
+	font-weight: 400;
+	font-display: swap;
+	src: local('Pretendard Regular'), url(../fonts/Pretendard-Regular.woff2) format('woff2'), url(../fonts/Pretendard-Regular.woff) format('woff');
+}
+body {
+    font-family: 'ptd', sans-serif; /* woff woff2 파일을 불러서 서체를 정의 한경우
+    내가 정의한 이름으로 서체를 불러주면 되고, sans serif를 추가해서 고딕체를 정의 */
+    font-size: 18px;
+    font-weight: 400;
+    color: #3d3d3d;
+    line-height: 1.5;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+li {
+    list-style: none;
+}
+.wrapper {
+    width: 1260px;
+    margin: 0 auto;
+}
+.color h1 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #1d1d1d;
+    margin: 110px 0 20px 0;
+}
+.color .list ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 92px 0 127px 0;
+}
+.color .list ul li {
+    width: 404px;
+}
+.color .list ul li h2 {
+    font-weight: 700;
+    font-size: 24px;
+    color: #1d1d1d;
+}
+.color .list ul li .process {
+    font-weight: 400;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #034ea2;
+    margin: 30px 0 0 0;
+    /* 외부 여백 다른요소와의 간격을줌 */
+    padding: 21px 30px;
+    /* 내부 안에 여백을줌 배경색을 늘림 */
+    border-radius: 10px;
+}
+.coper h1 {
+    font-weight: 700;
+    font-size: 40px;
+    margin: 0 0 20px 0;
+    color: #1d1d1d;
+}
