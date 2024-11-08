@@ -65,6 +65,9 @@ li, ul, ol {
     display: block
     /* a 스타일주면 display block 걍 공식 다만 내가 예상것보다 사이즈 크면 display:inline-block */
 }
+.story .title .more a:hover {
+    background-color: #e68155;
+}
 .story .list ul {
     display: flex;
     justify-content: space-between;
