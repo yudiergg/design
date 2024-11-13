@@ -15,6 +15,13 @@ body {
     width: 1260px;
     margin: 0 auto;
 }
+#wrap {
+    min-width: 1300px;
+    /* 브라우저의 최소 넓이를 지정
+    - 작은 브라우저에서 가로스크롤이 생기면 배경이 짤림 
+    wrapper에서 지정한 width에 좌우여백 20px씩 준 값
+    1260 + 40 = 1300 */
+}
 
 header {
     height: 100px;
@@ -89,7 +96,7 @@ header .wrapper .gnb ul li a {
 .biz .list ul li h3 {
     font-size: 30px;
     font-weight: 700;
-    margin: 10px 0 0 0;
+    margin: 20px 0 0 0;
 }
 .biz .list ul li a {
     display: block; /* a태그는 block아님 inline-block 필수 */
@@ -105,6 +112,10 @@ header .wrapper .gnb ul li a {
     border: 1px solid #707070;
     display: block; /* 해당요소를 감싸고 있는 요소와 같은 넓이 100% 차게 만들때 */
     padding: 10px 0 10px 0;
+}
+.biz .list ul .photo{
+    font-size: 0;
+    line-height: 0;
 }
 .biz .list ul li a:hover .more {
     border-color: #0F2A71;
