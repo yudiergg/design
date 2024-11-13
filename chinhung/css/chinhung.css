@@ -63,7 +63,7 @@ header .wrapper .gnb ul li a {
     text-align: center;
 }
 
-    
+
 .biz .title h2 {
     color: #1d1d1d;
     font-size: 40px;
@@ -101,10 +101,15 @@ header .wrapper .gnb ul li a {
 .biz .list ul li .inner {
     margin: 0 20px 0 20px;
 }
-.biz .list ul li span {
+.biz .list ul li a .more {
     border: 1px solid #707070;
     display: block; /* 해당요소를 감싸고 있는 요소와 같은 넓이 100% 차게 만들때 */
     padding: 10px 0 10px 0;
+}
+.biz .list ul li a:hover .more {
+    border-color: #0F2A71;
+    background-color: #0F2A71;
+    color: #fff;
 }
 
 .brand {
@@ -133,5 +138,32 @@ header .wrapper .gnb ul li a {
 }
 
 footer {
-    margin: 500px 0 0 0;
+    padding: 68px 0 78px 0;
+    color: rgba(255, 255, 255, 0.8);
+    background-color: #1d1d1d;
+}
+footer .f_nav ul {
+    display: flex;
+}
+footer .f_nav ul li {
+    margin: 0 40px 0 0;
+}
+footer .f_nav ul li:last-child {
+    margin-right: 0;
+}
+footer .f_nav ul li.privacy {
+    font-weight: 700;   /* li.privacy (띄어쓰기 없음) 라는 의미는 <li class="privacy"> 요소라는 뜻
+                        li. privacy (띄어쓰기 있음)
+                        <li>
+                            <div class="privacy"> -- li안에 privacy라는 클래스를 갖는 요소 */
+}
+footer .f_info {
+    margin: 20px 0 20px 0;
+}
+footer .f_info span {
+    margin: 0 40px 0 0;
+    display: inline-block;
+}
+footer .copyright {
+    color: rgba(255, 255, 255, 0.4);
 }
