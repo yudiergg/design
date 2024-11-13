@@ -7,6 +7,9 @@ body {
     color: #3d3d3d;
     line-height: 1.5;
     letter-spacing: 0;
+    word-break: keep-all; /* (여백을 기준으로) 줄바꿈*/
+    word-wrap: break-word; /* 단어가 너무 길어서 줄바꿈이 안될때 강제로 줄바꿈
+     word-break: keep-all;로 단어별로 (여백) 줄바꿈때문에 생기는 오류 수정*/
 }
 .wrapper {
     width: 1260px;
@@ -34,7 +37,7 @@ header .wrapper .gnb ul li a {
 
 .visual {
     height: 800px;
-    background: url(../images/visual1_bg.png) no-repeat center center / cover;
+    background: url(../images/visual_bg1.png) no-repeat center center / cover;
     color: #fff;
     text-align: center;
 }
@@ -52,4 +55,83 @@ header .wrapper .gnb ul li a {
     margin: 20px 0 0;
 }
 
+.biz {
+    margin: 146px 146px;
+}
+.biz .title {
+    margin: 0 0 50px 0;
+    text-align: center;
+}
 
+    
+.biz .title h2 {
+    color: #1d1d1d;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+    letter-spacing: -0.01em;
+}
+.biz .title strong {
+    color: #0F2A71;
+}
+.biz .title p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #3d3d3d;
+}
+.biz .list ul {
+    display: flex;
+    justify-content: space-between;
+}
+.biz .list ul li {
+    width: 297px;
+}
+.biz .list ul li h3 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 10px 0 0 0;
+}
+.biz .list ul li a {
+    display: block; /* a태그는 block아님 inline-block 필수 */
+    text-align: center;
+}
+.biz .list ul li p {
+    margin: 10px 0 30px 0;
+}
+.biz .list ul li .inner {
+    margin: 0 20px 0 20px;
+}
+.biz .list ul li span {
+    border: 1px solid #707070;
+    display: block; /* 해당요소를 감싸고 있는 요소와 같은 넓이 100% 차게 만들때 */
+    padding: 10px 0 10px 0;
+}
+
+.brand {
+    background: url(../images/post_bg.png) no-repeat center center / cover;
+    height: 800px;
+    color: #fff;
+}
+.brand h2 {
+    font-size: 40px;
+    letter-spacing: -0.01em;
+    font-weight: 700;
+    padding: 250px 0 0 0;
+    line-height: 1.2;
+}
+.brand p{
+    margin: 20px 0 40px 0;
+}
+.brand .more a {
+    display: inline-block; /* 패딩주면 위에 여백도 머기때문에 반드시 블럭 or 인라인블록*/
+    border: 1px solid #fff;
+    padding: 14px 40px;
+}
+.brand .more a:hover {
+    background-color: #0F2A71;
+    border-color:#0F2A71; /* 선두께 형태가 같다면 호버 색상만 변경이라면 border color로만 지정해줘도됨 */
+}
+
+footer {
+    margin: 500px 0 0 0;
+}
