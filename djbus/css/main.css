@@ -22,3 +22,57 @@ body {
     wrapper에서 지정한 width에 좌우여백 20px씩 준 값
     1260 + 40 = 1300 */
 }
+header {
+    height: 95px;
+}
+header .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+header h1{
+    margin: 24px 0 0 0;
+}
+header .gnb ul {
+    display: flex;
+}
+header .gnb ul li a {
+    display: block;
+    padding: 34px 20px 34px 20px;
+    color: #1d1d1d;
+    line-height: 1.5;
+    position: relative; /* after 정렬의 기준 */
+}
+header .gnb ul li a:hover {
+    color: #111A6D;
+    font-weight: 700;
+}
+header .gnb ul li a:hover::after { /* a에게 마우스를 올렸을때 가상선택자 */
+    content: "";
+    position: absolute; /* a 기준으로 정렬 */
+    left: 20px;
+    bottom: 12px;
+    width: calc(100% - 40px); /* 퍼센티지 픽셀빼는법 반응형때매 많이씀 */
+    height: 2px;
+    background-color: #111A6D;
+}
+.visual {
+    height: 800px;
+    background: url(../images/visual_bg.jpg) no-repeat center center / cover;
+    /* 백 이미지 넣을때 공식처럼 그냥 왜우셈 한줄로 */
+    color: #fff;
+}
+.visual strong {
+    padding: 286px 0 0 0;
+    display: block;
+    /* 스트롱 혼자만 잡히는 인라인이라 블럭처리하고 마진안먹혀서 패딩줌 */
+}
+.visual h2 {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+}
+.int {
+    margin: 140px 0;
+    display: flex;
+}
