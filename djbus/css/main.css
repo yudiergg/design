@@ -72,7 +72,4 @@ header .gnb ul li a:hover::after { /* a에게 마우스를 올렸을때 가상�
     line-height: 1.3;
     letter-spacing: -0.01em;
 }
-.int {
-    margin: 140px 0;
-    display: flex;
-}
+
