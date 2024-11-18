@@ -236,6 +236,12 @@ header .gnb ul li a:hover::after { /* a에게 마우스를 올렸을때 가상�
     font-size: 0;
     line-height: 0;
 }
+.pr .video .list ul li a .photo img{
+    transition: 0.3s; /* 애니메이션 효과인데 천천히 처리하는거 숫자가 적을수록 빨라짐 */
+}
+.pr .video .list ul li a:hover .photo img {
+    transform: scale3d(1.2, 1.2, 1); /* 호버했을때 가로세로 1.2 */
+}
 .pr .video .more {
     position: absolute;
     right: 0;
