@@ -63,13 +63,28 @@ header .tnb .global button {
 }
 .visual h2 {
     padding-top: 400px;
+    font-family: 'Gmarket Sans';
     font-size: 50px;
     font-weight: 700;
     line-height: 1.2;
     letter-spacing: 0;
 }
 
+.biz {
+    margin: 160px 0;
+}
+.biz .title {
+    position: sticky; /* 감싸는 요소가 overflow"hidden 있으면 적용안됨 실제로는 못함 */
+    top: 160px;
+}
+.biz .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
 .biz .title h3 {
+    margin-bottom: 10px;
+    font-family: 'Gmarket Sans';
     font-size: 34px;
     font-weight: 700;
     line-height: 1.3;
@@ -80,17 +95,241 @@ header .tnb .global button {
     color: #2979FF;
 }
 
-.biz {
-    margin: 160px 0;
-}
-.biz .wrapper {
-    display: flex;
-    justify-content: space-between;
-}
 .biz .list {
     display: flex;
+    gap: 24px;
 }
-.biz .list ul li {
-    width: 291px;
+.biz .list ul.up {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    row-gap: 24px;
+}
+
+.biz .list ul.down {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+    row-gap: 24px;
+}
+
+.biz .list ul li a {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 296px;
     height: 449px;
+    padding: 40px 40px;
+    row-gap: 10px;
+    border-radius: 20px;
+    overflow: hidden;
+    color: #fff;
+}
+.biz .list ul li a .photo {
+    position: absolute; /* postion 없는요소와 있는 요소가 나와서 존재하면 postion 있는 요소가 위에 배치됨 */
+    top: 0;
+    right: 0;
+    z-index: -1; /* 레이어 겹칠때 우선순위 위로 올리는ㄱ */
+    width: 100%;
+    height: 100%;
+}
+.biz .list ul li a h3 {
+    font-family: 'Gmarket Sans';
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: 0;
+}
+.biz .list ul li a p {
+    display: none;
+}
+.biz .list ul li a span {
+    position: relative;
+    display: none; /* none 으로 바꿀거임 */
+    padding-right: 24px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0;
+}
+.biz .list ul li span::after {
+    position: absolute;
+    content: "";
+    top: 1.5px;
+    right: 0;
+    width: 24px;
+    height: 24px;
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='25' viewBox='0 0 24 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.6 12.5L8 7.9L9.4 6.5L15.4 12.5L9.4 18.5L8 17.1L12.6 12.5Z' fill='white'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+/* 호버 한거 */
+.biz .list ul li a:hover {
+    background-color: rgba(40, 121, 255, 0.8);
+    transition: 0.3s;
+}
+.biz .list ul li a:hover p {
+    display: flex;
+}
+.biz .list ul li a:hover span {
+    display: flex;
+}
+
+.news h3 {
+    font-family: 'Gmarket Sans';
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: 0;
+    color: #1d1d1d;
+}
+.news strong {
+    color: #2979FF
+}
+.news {
+    height: 612px;
+    padding: 100px 0;
+    margin: 160px 0;
+    background-color: #F4F7FF;
+}
+.news .wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+.news .wrapper ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.news  .list ul li a {
+    display: flex;   
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.news .list ul li a:hover {
+    font-weight: 700;
+    color: #0E47A1;
+}
+.news  .list ul li a em {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0;
+    color: rgba(61, 61, 61, 0.6)
+}
+.news .list ul li a:hover em {
+    font-weight: 700;
+    color: #0E47A1;
+}
+.news .more a {
+    position: absolute;
+    display: block;
+    top: 17px;
+    right: 0;
+    padding-right: 24px;
+    font-weight: 700;
+    color: #2979FF;
+}
+.news .more a:hover {
+    color: #0E47A1;
+}
+.news .more a::after {
+    position: absolute;
+    content: "";
+    top: 1.5px;
+    right: 0;
+    width: 24px;
+    height: 24px;
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='25' viewBox='0 0 24 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.6 12.5L8 7.9L9.4 6.5L15.4 12.5L9.4 18.5L8 17.1L12.6 12.5Z' fill='%232979FF'/%3E%3C/svg%3E%0A");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: transform 0.2s;
+}
+.news .more a:hover::after {
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='25' viewBox='0 0 24 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.6 12.5L8 7.9L9.4 6.5L15.4 12.5L9.4 18.5L8 17.1L12.6 12.5Z' fill='%230E47A1'/%3E%3C/svg%3E%0A");
+    transform: rotate(90deg);
+}
+
+.webzin {
+    display: flex;
+    flex-direction: column;
+    gap: 40px
+}
+.webzin h3 {
+    font-family: 'Gmarket Sans';
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: 0;
+    color: #1d1d1d;
+}
+.webzin strong {
+    color: #2979FF;
+}
+.webzin .list ul {
+    display: flex;
+    width: 1871px;
+    gap: 24px;
+    /* li의 넓이 404 * li의 갯수 5 + gap 24 * 5-1 피그마 생각할때 flex로 디자인 작업시 그영역에 맞출려고
+    무조건 줄어들음 그래서 전체영역을 고정으로 잡아줌 */ 
+    
+}
+.webzin .list ul li {
+    width: 355px;
+}
+.webzin .list ul li a {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.webzin .list ul li a .photo {
+    height: 220px;
+    border-radius: 10px;
+    overflow: hidden; /* 피그마 클립콘텐츠 */
+}
+.webzin .list ul li a .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 감싸고 있는 상위요소인 .photo에 꽉꽉 채워서 들어가게 하는거 영역 생각 */
+    transition: 0.5s;
+}
+.webzin .list ul li a:hover .photo img {
+    transform: scale3d(1.2, 1.2, 1);
+}
+.webzin .list ul li a strong {
+    font-family: 'Gmarket Sans';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: 0;
+    color: #2979FF;
+}
+.webzin .list ul li a h4 {
+    height: 2.8em;
+    font-family: 'Gmarket Sans';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: 0;
+    overflow: hidden;
+    color: #1d1d1d;
+    /*white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;*/
+
+}
+.webzin .list ul li a p {
+    line-height: 1.5;
+    height: 3.0em; /* 행간에 * 줄수 단위는 em */
+    overflow: hidden;
 }
