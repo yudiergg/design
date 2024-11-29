@@ -35,7 +35,7 @@
 .service .list .wash.right {
     margin-top: 75px;
 }
-.service .list .wash.right {
+.service .list .wash.left {
     margin-bottom: 75px;
 }
 .service .list .wash .photo {
@@ -130,7 +130,6 @@
     width: 100%;
     height: 422px;
     padding: 105px 0 0 0;
-    margin-bottom: 130px;
     background: url(../images/bg_3.jpg) center center / cover;
     text-align: center;
     color: #ffff;
@@ -173,7 +172,9 @@
     background-repeat: no-repeat;
     background-size: contain;
 }
-
+.cs {
+    margin: 130px 0 206px 0;
+}
 .cs ul {
     display: flex;
     justify-content: space-between;
