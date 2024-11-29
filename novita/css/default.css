@@ -22,3 +22,12 @@ a {
 em, address {
     font-style: normal; /* 기본 정자의 폰트로 변경*/
 }
+button {
+    border: 0;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    letter-spacing: inherit;
+    background-color: transparent;
+    color: inherit;
+}
