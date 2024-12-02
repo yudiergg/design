@@ -28,6 +28,7 @@ button {
     font-weight: inherit;
     line-height: inherit;
     letter-spacing: inherit;
+    cursor: pointer;
     background-color: transparent;
-    color: inherit;
+    color: inherit;    
 }
