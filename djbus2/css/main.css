@@ -142,7 +142,7 @@ header .gnb .gnb_open ul li a:hover span::after {
     .visual .wrapper {
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: 8px;
     }
     .visual strong {
         display: block;
@@ -289,6 +289,9 @@ header .gnb .gnb_open ul li a:hover span::after {
     }
 }
 
+body {
+    background-color: red;
+}
 
 footer {
     margin-top: 500px;
