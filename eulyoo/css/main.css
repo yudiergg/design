@@ -114,7 +114,7 @@ header .tnb .serch {
 
 .visual {
     position: relative;
-    height: 100vh;
+    height: 100dvh; /* 모바일 브라우저에 따라 보이는 영역이 있고 없고가 발생 이는 브라우저에 주소창때문 */
     overflow: hidden;
     background: url(../images/visual_bg.jpg) no-repeat center center / cover;
     color: #fff;
