@@ -123,7 +123,7 @@ header .tnb .serch {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding-top: calc(100vh - 400px);
+    padding-top: calc(100dvh - 400px);
 }
 .visual h2 {
     font-family: 'eulyoo';
