@@ -1,6 +1,6 @@
 @import url(default.css);
 @import url(font.css);
-@import url(common.css);
+@import url(common.css?v=241257);
 
 
 header {
@@ -509,8 +509,8 @@ header .tnb .serch {
     overflow: hidden;
 }
 .interview .list ul li a:hover .inner span {
-    display: block;
     position: relative;
+    display: block;
     width: auto;
     height: auto;
     padding-right: 24px;
@@ -520,9 +520,15 @@ header .tnb .serch {
     color: rgba(255, 255, 255, 0.8);
 }
 .interview .list ul li a:hover .inner span::before {
+    position: absolute;
     top: 0;
-    right: 0;
+    left: 0;
+    width: 24px;
+    height: 24px;
     background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.6 12L8 7.4L9.4 6L15.4 12L9.4 18L8 16.6L12.6 12Z' fill='white' fill-opacity='0.8'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
 }
 
 @media screen and (max-width:640px){
@@ -604,8 +610,10 @@ header .tnb .serch {
         color: rgba(255, 255, 255, 0.8);
     }
     .interview .list ul li a .inner span::before {
-        top: 0;
-        left: 0;
+        top: -2px;
+        right: 0;
+        width: 24px;
+        height: 24px;
         background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.6 12L8 7.4L9.4 6L15.4 12L9.4 18L8 16.6L12.6 12Z' fill='white' fill-opacity='0.8'/%3E%3C/svg%3E%0A");
     }
 }

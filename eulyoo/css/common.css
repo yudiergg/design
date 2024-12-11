@@ -29,3 +29,13 @@ body, html {
         min-width: 0;     
     }
 }
+
+/* 드래그했을대 색상바뀌는거 */
+::selection {
+    background-color: #AE9E8F;
+    color: #FFF9F0;
+}
+::-moz-selection {
+    background-color: #AE9E8F;
+    color: #FFF9F0;
+}
