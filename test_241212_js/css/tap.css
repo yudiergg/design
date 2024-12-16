@@ -1,0 +1,20 @@
+@import url(default.css);
+@import url(font.css);
+@import url(common.css);
+
+.news {
+    margin: 100px 0;
+}
+.news .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.news .tab_list ul {
+    display: flex;
+    border-bottom: 1px solid #ccc;  
+}
+.news .tab_list ul li button {
+    padding: 10px 20px;
+    color: #1d1d1d;
+}
