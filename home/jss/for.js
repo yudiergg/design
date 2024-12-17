@@ -8,4 +8,9 @@ $(document).ready(function(){
     for (let i = 1; i < 1001; i++)
         sum1 += i
     document.write(`1부터 1000까지 더하면 ${sum1}`)
+
+    for(let i = 1; i <= 9; i++) {
+        document.write(`<h3>${i}단</h3>`);
+    for(let)
+    }
 })
