@@ -1,0 +1,23 @@
+@import url(default.css);
+@import url(font.css);
+@import url(common.css);
+
+.homework {
+    margin: 100px 0;
+}
+.homework a span {
+    color: #fff;
+    background-color: black;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+.homework.on a span {
+    background-color: blue;
+}
+.homework .more a {
+    display: inline-block;
+    color: #fff;
+    background-color: black;
+    padding: 10px 20px;
+    border-radius: 100px;
+}
